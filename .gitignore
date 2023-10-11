@@ -1,2 +1,6 @@
 node_modules/
 mysql/
+*.hcl
+*.tfstate
+*.tfstate.backup
+.terraform/

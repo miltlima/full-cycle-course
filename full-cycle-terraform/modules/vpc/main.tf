@@ -5,7 +5,9 @@ resource "aws_vpc" "new-vpc" {
   }
 }
 
-data "aws_availability_zones" "available" {}
+data "aws_availability_zones" "available" {
+  state = "available"
+}
 
 resource "aws_subnet" "subnets" {
   count                   = 2
